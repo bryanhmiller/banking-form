@@ -13,31 +13,50 @@ Build a form that accepts a loan application. It must have the following fields.
 
 1	Applicant first name -->
 	<legend>Personal Information</legend>
-	<input type="text" name="applicantfirstname" placeholder="First Name">
+	<input type="text" name="applicantfirstname" placeholder="First Name" maxlength="25" size="25" />
 
 	<!-- 2	Applicant middle initial  -->
-	<input type="text" name="applicantmiddleinitial" placeholder="Middle Initial">
+	<input type="text" name="applicantmiddleinitial" placeholder="Middle Initial" maxlength="1" size="14" />
 	
 	<!-- 3	Applicant last name -->
-	<input type="text" name="applicantlastname" placeholder="Last Name">
+	<input type="text" name="applicantlastname" placeholder="Last Name" maxlength="25" size="25"/>
 
 	<!-- 4	Applicant address  -->
-	<input type="text" name="applicantaddress" placeholder="P. O. Box or Street Address">
-	<input type="text" name="applicantaddress2" placeholder="Apartment, Suite or Unit Number">
-	<input type="text" name="applicantaddresscity" placeholder="City">
-	<input type="text" name="applicantaddressstate" placeholder="State">
-	<input type="text" name="applicantaddresszipcode" placeholder="Zip Code">
+	<input type="text" name="applicantaddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
+	<input type="text" name="applicantaddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
+	<input type="text" name="applicantaddresscity" placeholder="City" maxlength="25" size="25" />
+	<input type="text" name="applicantaddressstate" placeholder="State" maxlength="13" size="13" />
+	<input type="text" name="applicantaddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
 
 	<!-- 5	Applicant occupation  
   		 6	Applicant employer
 		 7	Employer address -->
+	<input type="text" name="applicantoccupation" placeholder="Occupation" maxlength="25" size="25" />
+	<input type="text" name="applicantemployer" placeholder="Employer" maxlength="25" size="25" />
+	<input type="text" name="employeraddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
+	<input type="text" name="employeraddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
+	<input type="text" name="employeraddresscity" placeholder="City" maxlength="25" size="25" />
+	<input type="text" name="employeraddressstate" placeholder="State" maxlength="13" size="13" />
+	<input type="text" name="employeraddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
+	
 	
 <!-- 
-8	Type of loan select element with these options: (check boxes)
+8	Type of loan select element with these options: 
+
 	i		Commercial
 	ii		Real estate
 	iii		Personal
-	iv		Mortgage
+	iv		Mortgage -->
+	<p>Select Loan Type:<p>
+	<select name="loantype">
+		<option value=""></option>
+		<option value="Commercial">Commercial</option>
+		<option value="Real Estate">Real Estate</option>
+		<option value="Personal">Personal</option>
+		<option value="Mortgage">Mortgage</option>
+	</select>
+
+<!--
 9	Requested amount of loan
 10	Radio button elements for loan length
 	i		5 years
@@ -55,7 +74,8 @@ Build a form that accepts a loan application. It must have the following fields.
 
 		</fieldset> 	
  	</form>
-
+-->
+<!-- 
  						<form action="javascript:void(0);">
 						<fieldset>
 							<legend>Personal Info</legend>
@@ -74,7 +94,7 @@ Build a form that accepts a loan application. It must have the following fields.
 							4<input type="radio" name="love" value="4" placeholder="4">
 							5<input type="radio" name="love" value="5" placeholder="5">
 						</fieldset>
-						<fieldset>
+						<fieldset> 
 							<legend></legend>
 							<label for="dogs">Dogs</label>
 								<select name="dogs" multiple="">
@@ -98,4 +118,4 @@ Build a form that accepts a loan application. It must have the following fields.
 
 	<footer>&copy; 2017 Bryan Miller</footer>
 </body>
-</html>
+</html> -->
