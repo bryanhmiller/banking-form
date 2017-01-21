@@ -59,30 +59,37 @@ Build a form that accepts a loan application. It must have the following fields.
 		<option value="Mortgage">Mortgage</option>
 	</select>
 
-<!-- 9	Requested amount of loan -->
+	<!-- 
+		9	Requested amount of loan -->
 								<!-- <input type="range" name=""> -->
 								<!-- <input type="number" name=""> -->
-								<p>Select the loan amount (in increments of $500.00)</p>
-								<input type="number" min="500" step="500" required="true" /> 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <style type="text/css">
-        .dollars:before { content:'$'; }
-    </style>
-</head>
-<body>
-    Pure CSS: <span class="dollars">25153.3</span>
-    <br />
-    Ideal format: <span>$25,153.30</span>
-</body>
-</html> -->
+	<p>Select the loan amount (in increments of $500.00)</p>
+	<input type="number" min="500" step="500" required="true" /> 
+							<!-- STYLIING FOR CURENCY IN DISPLAY<!DOCTYPE html>
+							<html>
+							<head>
+							    <style type="text/css">
+							        .dollars:before { content:'$'; }
+							    </style>
+							</head>
+							<body>
+							    Pure CSS: <span class="dollars">25153.3</span>
+							    <br />
+							    Ideal format: <span>$25,153.30</span>
+							</body>
+							</html> -->
 
+	<!--
+		10	Radio button elements for loan length
+			i		5 years
+			ii		15 years
+			iii		30 years -->
+	<p>Please select the length of the loan:</p>
+	<input type="radio" name="loanlength" value="5" placeholder="5 years">5 years
+	<input type="radio" name="loanlength" value="15" placeholder="15 years">15 years
+	<input type="radio" name="loanlength" value="30" placeholder="30 years">30 years
+		
 <!--
-10	Radio button elements for loan length
-	i		5 years
-	ii		15 years
-	iii		30 years
 11	Checkbox group for special conditions
 	i		I have a down payment
 	ii		Out-of-state resident
