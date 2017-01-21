@@ -13,6 +13,7 @@ Build a form that accepts a loan application. It must have the following fields.
 
 1	Applicant first name -->
 	<legend>Personal Information</legend>
+	<p>Applicant Name:</p>
 	<input type="text" name="applicantfirstname" placeholder="First Name" maxlength="25" size="25" />
 
 	<!-- 2	Applicant middle initial  -->
@@ -22,6 +23,7 @@ Build a form that accepts a loan application. It must have the following fields.
 	<input type="text" name="applicantlastname" placeholder="Last Name" maxlength="25" size="25"/>
 
 	<!-- 4	Applicant address  -->
+	<p>Applicant Address:</p>
 	<input type="text" name="applicantaddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
 	<input type="text" name="applicantaddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
 	<input type="text" name="applicantaddresscity" placeholder="City" maxlength="25" size="25" />
@@ -31,6 +33,7 @@ Build a form that accepts a loan application. It must have the following fields.
 	<!-- 5	Applicant occupation  
   		 6	Applicant employer
 		 7	Employer address -->
+	<p>Employment Information:</p>
 	<input type="text" name="applicantoccupation" placeholder="Occupation" maxlength="25" size="25" />
 	<input type="text" name="applicantemployer" placeholder="Employer" maxlength="25" size="25" />
 	<input type="text" name="employeraddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
@@ -40,13 +43,13 @@ Build a form that accepts a loan application. It must have the following fields.
 	<input type="text" name="employeraddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
 	
 	
-<!-- 
-8	Type of loan select element with these options: 
+	<!-- 
+		8	Type of loan select element with these options: 
 
-	i		Commercial
-	ii		Real estate
-	iii		Personal
-	iv		Mortgage -->
+			i		Commercial
+			ii		Real estate
+			iii		Personal
+			iv		Mortgage -->
 	<p>Select Loan Type:<p>
 	<select name="loantype">
 		<option value=""></option>
@@ -56,8 +59,26 @@ Build a form that accepts a loan application. It must have the following fields.
 		<option value="Mortgage">Mortgage</option>
 	</select>
 
+<!-- 9	Requested amount of loan -->
+								<!-- <input type="range" name=""> -->
+								<!-- <input type="number" name=""> -->
+								<p>Select the loan amount (in increments of $500.00)</p>
+								<input type="number" min="500" step="500" required="true" /> 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .dollars:before { content:'$'; }
+    </style>
+</head>
+<body>
+    Pure CSS: <span class="dollars">25153.3</span>
+    <br />
+    Ideal format: <span>$25,153.30</span>
+</body>
+</html> -->
+
 <!--
-9	Requested amount of loan
 10	Radio button elements for loan length
 	i		5 years
 	ii		15 years
