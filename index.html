@@ -8,152 +8,124 @@
 <body>
 	<form>
 		<fieldset>
-<!-- 
-Build a form that accepts a loan application. It must have the following fields.
-
-1	Applicant first name -->
-	<legend>Personal Information</legend>
-	<p>Applicant Name:</p>
-		<input type="text" name="applicantfirstname" placeholder="First Name" maxlength="25" size="25" />
-
-	<!-- 2	Applicant middle initial  -->
-		<input type="text" name="applicantmiddleinitial" placeholder="Middle Initial" maxlength="1" size="14" />
-	
-	<!-- 3	Applicant last name -->
-		<input type="text" name="applicantlastname" placeholder="Last Name" maxlength="25" size="25"/>
-
-	<!-- 4	Applicant address  -->
-	<p>Applicant Address:</p>
-		<input type="text" name="applicantaddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
-		<input type="text" name="applicantaddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
-		<input type="text" name="applicantaddresscity" placeholder="City" maxlength="25" size="25" />
-		<input type="text" name="applicantaddressstate" placeholder="State" maxlength="13" size="13" />
-		<input type="text" name="applicantaddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
-
-	<!-- 5	Applicant occupation  
-  		 6	Applicant employer
-		 7	Employer address -->
-	<p>Employment Information:</p>
-		<input type="text" name="applicantoccupation" placeholder="Occupation" maxlength="25" size="25" />
-		<input type="text" name="applicantemployer" placeholder="Employer" maxlength="25" size="25" />
-		<input type="text" name="employeraddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
-		<input type="text" name="employeraddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
-		<input type="text" name="employeraddresscity" placeholder="City" maxlength="25" size="25" />
-		<input type="text" name="employeraddressstate" placeholder="State" maxlength="13" size="13" />
-		<input type="text" name="employeraddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
-
 	<!-- 
-		8	Type of loan select element with these options: 
+	Build a form that accepts a loan application. It must have the following fields.
 
-			i		Commercial
-			ii		Real estate
-			iii		Personal
-			iv		Mortgage -->
-	<p>Select Loan Type:<p>
-		<select name="loantype">
-			<option value=""></option>
-			<option value="Commercial">Commercial</option>
-			<option value="Real Estate">Real Estate</option>
-			<option value="Personal">Personal</option>
-			<option value="Mortgage">Mortgage</option>
-		</select>
+		1	Applicant first name -->
+			<legend>Personal Information</legend>
+				<p>Applicant Name:</p>
+					<input type="text" name="applicantfirstname" placeholder="First Name" maxlength="25" size="25" />
 
-	<!-- 
-		9	Requested amount of loan -->
-								<!-- <input type="range" name=""> -->
-								<!-- <input type="number" name=""> -->
-	<p>Select the loan amount (in increments of $500.00)</p>
-		<input type="number" min="500" step="500" required="true" /> 
-							<!-- STYLIING FOR CURENCY IN DISPLAY<!DOCTYPE html>
-							<html>
-							<head>
-							    <style type="text/css">
-							        .dollars:before { content:'$'; }
-							    </style>
-							</head>
-							<body>
-							    Pure CSS: <span class="dollars">25153.3</span>
-							    <br />
-							    Ideal format: <span>$25,153.30</span>
-							</body>
-							</html> -->
+				<!-- 2	Applicant middle initial  -->
+					<input type="text" name="applicantmiddleinitial" placeholder="Middle Initial" maxlength="1" size="14" />
+				
+				<!-- 3	Applicant last name -->
+					<input type="text" name="applicantlastname" placeholder="Last Name" maxlength="25" size="25"/>
 
-	<!--
-		10	Radio button elements for loan length
-			i		5 years
-			ii		15 years
-			iii		30 years -->
-	<p>Please select the length of the loan:</p>
-		<input type="radio" name="loanlength" value="5" placeholder="5 years">5 years
-		<input type="radio" name="loanlength" value="15" placeholder="15 years">15 years
-		<input type="radio" name="loanlength" value="30" placeholder="30 years">30 years
-		
-	<!--
-		11	Checkbox group for special conditions
-			i		I have a down payment
-			ii		Out-of-state resident
-			iii		Married
-			iv		Loan will be co-signed -->
-	<p>Please check all applicable boxes:</p>
-		<input type="checkbox" name="specialconditions" value="downpayment">
-		<label for="specialconditions">I have a down payment</label>
-		<input type="checkbox" name="specialconditions" value="outofstate">
-		<label for="specialconditions">Out-of-state resident</label>
-		<input type="checkbox" name="specialconditions" value="Married">
-		<label for="specialconditions">Married</label>	
-		<input type="checkbox" name="specialconditions" value="Cosigner">
-		<label for="specialconditions">Loan will be co-signed</label>	
+				<!-- 4	Applicant address  -->
+				<p>Applicant Address:</p>
+					<input type="text" name="applicantaddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
+					<input type="text" name="applicantaddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
+					<input type="text" name="applicantaddresscity" placeholder="City" maxlength="25" size="25" />
+					<input type="text" name="applicantaddressstate" placeholder="State" maxlength="13" size="13" />
+					<input type="text" name="applicantaddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
 
-<!--
-12	A text area to allow for additional comments
-13	Applicant email address
-14	Applicant telephone number
-15	Applicant LinkedIn URL
+				<!-- 5	Applicant occupation  
+			  		 6	Applicant employer
+					 7	Employer address -->
+				<p>Employment Information:</p>
+					<input type="text" name="applicantoccupation" placeholder="Occupation" maxlength="25" size="25" />
+					<input type="text" name="applicantemployer" placeholder="Employer" maxlength="25" size="25" />
+					<input type="text" name="employeraddress" placeholder="P. O. Box or Street Address" maxlength="35" size="35"/>
+					<input type="text" name="employeraddress2" placeholder="Apartment, Suite or Unit Number" maxlength="35" size="35" />
+					<input type="text" name="employeraddresscity" placeholder="City" maxlength="25" size="25" />
+					<input type="text" name="employeraddressstate" placeholder="State" maxlength="13" size="13" />
+					<input type="text" name="employeraddresszipcode" placeholder="Zip Code" maxlength="10" size="10"/>
 
-		</fieldset> 	
- 	</form>
--->
-<!-- 
- 						<form action="javascript:void(0);">
-						<fieldset>
-							<legend>Personal Info</legend>
-							<label for="Name"></label>
-							<input type="text" name="name" value="">
-							<label for="hobbies">coding</label>	
-							<input type="checkbox" name="hobbies" value="coding">
-							<label for="hobbies">stuff</label>
-							<input type="checkbox" name="hobbies" value="stuff">
-							<label for="hobbies">other</label>
-							<input type="checkbox" name="hobbies" value="Other">
-							<h5>how much do you love this blog</h5>
-							1<input type="radio" name="love" value="1" placeholder="1">
-							2<input type="radio" name="love" value="2" placeholder="2">
-							3<input type="radio" name="love" value="3" placeholder="3">
-							4<input type="radio" name="love" value="4" placeholder="4">
-							5<input type="radio" name="love" value="5" placeholder="5">
-						</fieldset>
-						<fieldset> 
-							<legend></legend>
-							<label for="dogs">Dogs</label>
-								<select name="dogs" multiple="">
-									<option value="1"></option>
-									<option value="2"></option>
-									<option value="3"></option>
+				<!-- 
+					8	Type of loan select element with these options: 
 
-								</select>
-								<label for="comments">Comments</label>
-								<textarea name="comments"></textarea>
-								<input type="password" name="password" required>
-								<input type="range" name="">
-								<input type="number" name="">
-								<input type="tel" name="">
-								<input type="email" name="">
-						</fieldset>
-						<br>
-						<button type="submit">Submit</button>
-						<br>
-					</form>
+						i		Commercial
+						ii		Real estate
+						iii		Personal
+						iv		Mortgage -->
+				<p>Select Loan Type:<p>
+					<select name="loantype">
+						<option value=""></option>
+						<option value="Commercial">Commercial</option>
+						<option value="Real Estate">Real Estate</option>
+						<option value="Personal">Personal</option>
+						<option value="Mortgage">Mortgage</option>
+					</select>
 
+				<!-- 
+					9	Requested amount of loan -->
+											<!-- <input type="range" name=""> -->
+											<!-- <input type="number" name=""> -->
+				<p>Select the loan amount (in increments of $500.00)</p>
+					<input type="number" min="500" step="500" required="true" /> 
+										<!-- STYLIING FOR CURENCY IN DISPLAY<!DOCTYPE html>
+										<html>
+										<head>
+										    <style type="text/css">
+										        .dollars:before { content:'$'; }
+										    </style>
+										</head>
+										<body>
+										    Pure CSS: <span class="dollars">25153.3</span>
+										    <br />
+										    Ideal format: <span>$25,153.30</span>
+										</body>
+										</html> -->
+
+				<!--
+					10	Radio button elements for loan length
+						i		5 years
+						ii		15 years
+						iii		30 years -->
+				<p>Please select the length of the loan:</p>
+					<input type="radio" name="loanlength" value="5" placeholder="5 years">5 years
+					<input type="radio" name="loanlength" value="15" placeholder="15 years">15 years
+					<input type="radio" name="loanlength" value="30" placeholder="30 years">30 years
+					
+				<!--
+					11	Checkbox group for special conditions
+						i		I have a down payment
+						ii		Out-of-state resident
+						iii		Married
+						iv		Loan will be co-signed -->
+				<p>Please check all applicable boxes:</p>
+					<input type="checkbox" name="specialconditions" value="downpayment">
+					<label for="specialconditions">I have a down payment</label>
+					<input type="checkbox" name="specialconditions" value="outofstate">
+					<label for="specialconditions">Out-of-state resident</label>
+					<input type="checkbox" name="specialconditions" value="Married">
+					<label for="specialconditions">Married</label>	
+					<input type="checkbox" name="specialconditions" value="Cosigner">
+					<label for="specialconditions">Loan will be co-signed</label>	
+
+
+				<!-- 
+					12	A text area to allow for additional comments -->
+				<p>Please included any additional information below:</p>		
+					<label for="comments"></label>
+					<textarea name="comments"></textarea>
+
+				<!--	
+					13	Applicant email address 
+					14	Applicant telephone number
+					15	Applicant LinkedIn URL -->
+				<p>Applicant Contact Information:</p>
+					<input type="text" name="email" placeholder="email@example.com" maxlength="35" size="35"/>
+					<input type="tel" name="telephone" placeholder="(555)555-1212" maxlength="25" size="13"/>
+					<input type="text" name="LinkedIn" placeholder="LinkedIn URL" maxlength="35" size="35"/>
+			<br>
+			<br>
+			<button type="submit">Submit</button>
+			<br>
+			<br>
+			</fieldset> 	
+	 	</form>
 	<footer>&copy; 2017 Bryan Miller</footer>
 </body>
-</html> -->
+</html>
