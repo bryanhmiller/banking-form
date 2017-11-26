@@ -4,11 +4,11 @@
 
 #### This page is a basic form with a submit button. It is responsive, and this what it looks like on a smaller screen.
 
-![alt text](./images/github_readme_pics/banking-form-responsive.jpg "Flexbox was used to make this page responsive. Scroll down to see full-screen")
+[![banking-form-responsive.jpg](https://s18.postimg.org/vbqe93nd5/banking-form-responsive.jpg)](https://postimg.org/image/jmmel4wed/)
 
 #### This is what it looks like full screen.
 
-![alt text](./images/github_readme_pics/banking-form-full-screen.jpg "This is the full-screen view of the banking form.")
+[![banking-form-full-screen.jpg](https://s18.postimg.org/owrdcs3w9/banking-form-full-screen.jpg)](https://postimg.org/image/tvevrb7p1/)
 
 ## Technologies used include:
 *HTML
